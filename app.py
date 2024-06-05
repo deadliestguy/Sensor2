@@ -37,6 +37,7 @@ def upload():
             #now we are running this run pipeline method
             prediction_file_detail = prediction_pipeline.run_pipeline()
 
+            # logging info 
             lg.info("prediction completed. Downloading prediction file.")
             return send_file(prediction_file_detail.prediction_file_path,
                             download_name= prediction_file_detail.prediction_file_name,
