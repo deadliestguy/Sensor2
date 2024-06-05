@@ -65,7 +65,7 @@ class PredictionPipeline:
             try:
                 
                 
-
+                # load the object 
                 model = self.utils.load_object(self.prediction_pipeline_config.model_file_path)
                 preprocessor = self.utils.load_object(file_path=self.prediction_pipeline_config.preprocessor_path)
 
